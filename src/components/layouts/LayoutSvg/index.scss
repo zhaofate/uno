@@ -1,0 +1,97 @@
+.container {
+    #star {
+        path {
+            animation: 4s  0.5s infinite beat;
+        }     
+        @for $i from 1 through 3 {
+            :nth-child(#{$i}) {
+                animation-delay: $i * 0.4s;
+            }
+        }
+    }
+
+    #home {
+        .sanjiao {
+            transform: translate(17rem,-24rem) rotate(29deg);
+            animation: 2s alternate 0.5s infinite sanjiao;
+        }
+        .ball {
+            transform: translateX(0.5rem);
+            animation: 2s alternate 1s infinite ball-transform;
+        }
+
+    }
+
+    #ball {
+        path {
+            transform: translateX(-10rem);
+            animation: 10s linear roll;
+        }
+    }
+
+    @keyframes ball-transform{
+        0% {
+            transform: translateX(0.5rem);
+        }
+        50% {
+            transform: translateX(0rem);
+        }
+        100% {
+            transform: translateX(-0.5rem);
+        }
+    }
+
+    @keyframes sanjiao {
+        0% {
+            transform: translate(17rem,-24rem) rotate(29deg);
+        }
+        50% {
+            transform: translate(18rem,-26rem) rotate(32deg);
+        }
+        100% {
+            transform: translate(19.25rem,-27.74rem) rotate(35deg);
+        }
+    }
+
+    @keyframes roll {
+        0% {
+            transform: translateX(-10rem);
+        }
+        15% {
+            transform: translateX(0rem);
+        }
+        25% {
+            transform: translateX(6rem) translateY(-1rem);
+        }
+        35% {
+            transform: translateX(10rem) translateY(0rem);
+        }
+        50% {
+            transform: translateX(16rem) translateY(-1rem);
+        }
+        65% {
+            transform: translateX(10rem) translateY(0rem);
+        }
+        75% {
+            transform: translateX(6rem) translateY(-1rem);
+        }
+        85% {
+            transform: translateX(0rem);
+        }
+        100% {
+            transform: translateX(-10rem);
+        }
+    }
+
+    @keyframes beat {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-1rem);
+        }
+        100% {
+            transform: translateY(0rem);
+        }
+    }
+}
