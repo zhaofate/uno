@@ -1,4 +1,5 @@
 .container {
+    width: 100%;
     #star {
         path {
             animation: 4s  0.5s infinite beat;
@@ -11,9 +12,9 @@
     }
 
     #home {
-        .sanjiao {
+        .triangle{
             transform: translate(17rem,-24rem) rotate(29deg);
-            animation: 2s alternate 0.5s infinite sanjiao;
+            animation: 2s alternate 0.5s infinite triangle;
         }
         .ball {
             transform: translateX(0.5rem);
@@ -41,7 +42,7 @@
         }
     }
 
-    @keyframes sanjiao {
+    @keyframes triangle {
         0% {
             transform: translate(17rem,-24rem) rotate(29deg);
         }
@@ -93,5 +94,12 @@
         100% {
             transform: translateY(0rem);
         }
+    }
+}
+
+@media  screen and (max-width: 400px){
+    .container {
+        width: 100%;
+        height: 50%;
     }
 }

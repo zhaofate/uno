@@ -214,7 +214,7 @@ export default function index() {
             opacity="1"
           ></path>
           <path
-            className="sanjiao"
+            className="triangle"
             d="M1005.31 307.46L941.5 348.19H941.42V348.11L969.86 219.07C969.86 218.99 969.94 218.99 969.94 218.99L1098.97 247.43C1098.97 247.43 1099.05 247.43 1099.05 247.51V247.59L1013.58 302.18"
             fill="#abedd8"
             opacity="1"
@@ -222,7 +222,7 @@ export default function index() {
             stroke="none"
           ></path>
           <path
-            className="sanjiao"
+            className="triangle"
             d="M1005.31 307.46L941.5 348.19H941.42V348.11L969.86 219.07C969.86 218.99 969.94 218.99 969.94 218.99L1098.97 247.43C1098.97 247.43 1099.05 247.43 1099.05 247.51V247.59L1013.58 302.18"
             stroke="#333333"
             strokeWidth="2"
