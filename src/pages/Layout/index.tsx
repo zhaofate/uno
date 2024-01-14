@@ -1,6 +1,5 @@
 import { Outlet } from "react-router-dom";
 import LayoutSvg from "../../components/layouts/LayoutSvg";
-
 import "./index.scss";
 
 const Layout = () => {
