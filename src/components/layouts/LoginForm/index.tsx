@@ -7,7 +7,6 @@ import {
   Box,
   Link,
 } from "@chakra-ui/react";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
 const activeLabelStyles = {
   transform: "scale(0.85) translateY(-24px)",
 };
@@ -59,7 +58,7 @@ const Login = () => {
           </FormControl>
         </Box>
         <Link href="/layout/register">
-          Chakra Design system <ExternalLinkIcon mx="2px" />
+          Chakra Design system 
         </Link>
       </ChakraProvider>
     </>
