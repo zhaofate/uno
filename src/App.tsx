@@ -13,9 +13,9 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Navigate to="/layout" replace />} />
+        <Route path="/" element={<Navigate to="/login" replace />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/layout" element={<Layout />}>
+        <Route path="/login" element={<Layout />}>
           <Route index element={<LoginForm />} />
           <Route path="register" element={<RegistForm />} />
         </Route>
