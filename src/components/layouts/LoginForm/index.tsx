@@ -3,47 +3,21 @@ import {
   FormControl,
   FormLabel,
   Input,
-  extendTheme,
   Box,
-  Link,
+  Button,
+  Spacer,
+  Flex,
+  Link as ChakraLink,
 } from "@chakra-ui/react";
-const activeLabelStyles = {
-  transform: "scale(0.85) translateY(-24px)",
-};
-export const theme = extendTheme({
-  components: {
-    Form: {
-      variants: {
-        floating: {
-          container: {
-            _focusWithin: {
-              label: {
-                ...activeLabelStyles,
-              },
-            },
-            "input:not(:placeholder-shown) + label, .chakra-select__wrapper + label, textarea:not(:placeholder-shown) ~ label":
-              {
-                ...activeLabelStyles,
-              },
-            label: {
-              top: 0,
-              left: 0,
-              zIndex: 2,
-              position: "absolute",
-              backgroundColor: "white",
-              pointerEvents: "none",
-              mx: 3,
-              px: 1,
-              my: 2,
-              transformOrigin: "left top",
-            },
-          },
-        },
-      },
-    },
-  },
-});
+import { ArrowForwardIcon, ExternalLinkIcon } from "@chakra-ui/icons";
+import theme from "../../../theme.ts";
+import { Link as ReactRouterLink, useNavigate } from "react-router-dom";
+
 const Login = () => {
+  const navigate = useNavigate();
+  const login = () => {
+    navigate("/home");
+  }
   return (
     <>
       <ChakraProvider theme={theme}>
@@ -56,10 +30,27 @@ const Login = () => {
             <Input placeholder=" " />
             <FormLabel>密码</FormLabel>
           </FormControl>
+          <Flex>
+            <Spacer />
+            <Button
+              w="40%"
+              rightIcon={<ArrowForwardIcon />}
+              colorScheme="blue"
+              variant="outline"
+              onClick={login}
+            >
+              登 录
+            </Button>
+          </Flex>
         </Box>
-        <Link href="/layout/register">
-          Chakra Design system 
-        </Link>
+        <ChakraLink
+          color="blue.500"
+          fontSize="xs"
+          as={ReactRouterLink}
+          to="/login/register"
+        >
+          还没有账号？点击注册 <ExternalLinkIcon mx="2px" />
+        </ChakraLink>
       </ChakraProvider>
     </>
   );

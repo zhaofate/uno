@@ -9,10 +9,10 @@ $blueQueen: rgba(69, 105, 144, 1);
   align-items: center;
   justify-content: center;
   .left {
-    flex: 1;
+    flex: 0;
   }
   .right {
-    width: 25rem;
+    width: 30rem;
     overflow: hidden;
     background-color: white;
     padding: 40px 30px 30px 30px;
