@@ -4,8 +4,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import LoginForm from "./components/layouts/LoginForm";
-import RegistForm from "./components/layouts/RegistForm";
+import {Login,Register} from "./components/layouts/MyForm";
 import Home from "./pages/Home";
 import Layout from "./pages/Layout";
 
@@ -16,8 +15,8 @@ const App = () => {
         <Route path="/" element={<Navigate to="/login" replace />} />
         <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Layout />}>
-          <Route index element={<LoginForm />} />
-          <Route path="register" element={<RegistForm />} />
+          <Route index element={<Login />} />
+          <Route path="register" element={<Register />} />
         </Route>
       </Routes>
     </Router>
