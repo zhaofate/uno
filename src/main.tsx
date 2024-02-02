@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import { ApolloProvider } from "@apollo/client";
-import client from "./lib/graphql";
+import client from "./lib/graphql.ts";
 import { ChakraProvider} from "@chakra-ui/react";
 import App from "./App";
 import "./index.scss";
