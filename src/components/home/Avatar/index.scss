@@ -1,0 +1,68 @@
+.avatar {
+  position: relative;
+  top: 3rem;
+  left: 7rem;
+  height: 4rem;
+  width: 8rem;
+  border-top: 2px solid #e4bf7c;
+  border-bottom: 2px solid #e4bf7c;
+  &::after {
+    content: "";
+    position: absolute;
+    right: -1.55rem;
+    top: 0.4rem;
+    width: calc(2rem * var(--sqrt2));
+    height: calc(2rem * var(--sqrt2));
+    border-top: 2px solid #e4bf7c;
+    border-right: 2px solid #e4bf7c;
+    transform: rotate(45deg);
+    z-index: 10;
+  }
+
+  .name {
+    width: 100%;
+    text-align: center;
+  }
+  .big-avatar {
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid #e5bc83;
+    border-radius: 50%;
+    position: absolute;
+    top: -0.5rem;
+    left: -4rem;
+    z-index: 20;
+    .sm-avatar {
+      width: 40%;
+      height: 40%;
+      border: 1px solid #e5bc83;
+      border-radius: 50%;
+      position: absolute;
+      bottom: -10%;
+      right: -10%;
+    }
+  }
+  .btn-avatar {
+    position: absolute;
+    top: 1rem;
+    right: -2.5rem;
+    width: 2rem;
+    height: 2rem;
+    border: 0.15rem solid #884c4d;
+    border-radius: 0.25rem;
+    background-color: #e4bf7c;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+  }
+}
+
+.infoBox {
+  position: fixed;
+  right: 2rem;
+  top: 2rem;
+  width: 40%;
+  height: calc(100vh - 4rem);
+}

@@ -21,11 +21,11 @@
     "noFallthroughCasesInSwitch": true,
 
     // 路径别名
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"]
     }
   },
-  "include": ["src", "client", "codegen.ts"],
+  "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

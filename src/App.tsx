@@ -4,9 +4,9 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import {Login,Register} from "./components/layouts/MyForm";
-import Home from "./pages/Home";
-import Layout from "./pages/Layout";
+import {Login,Register} from "@/components/LoginRegister/MyForm";
+import Home from "@/pages/Home";
+import Layout from "@/pages/Layout";
 
 const App = () => {
   return (

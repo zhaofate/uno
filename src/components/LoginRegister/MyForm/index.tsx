@@ -12,7 +12,7 @@ import {
   useToast,
 } from "@chakra-ui/react";
 import { ArrowForwardIcon, ExternalLinkIcon } from "@chakra-ui/icons";
-import theme from "../../../theme.ts";
+import theme from "@/theme.ts";
 import {
   withFormik,
   FormikProps,
@@ -22,7 +22,7 @@ import {
   FieldInputProps,
 } from "formik";
 import { Link as ReactRouterLink, useNavigate} from "react-router-dom";
-import { LOGIN, REGISTER,FormValues,PlayerInfoFeedback} from "../../../lib/gql.ts";
+import { LOGIN, REGISTER,FormValues,PlayerInfoFeedback} from "@/lib/gql";
 import { useMutation } from "@apollo/client";
 
 

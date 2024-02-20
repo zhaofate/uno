@@ -11,6 +11,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("./assets/bg.jpg");
+  background-size: cover;
+  background-position: 10%;
 }
 
 @media screen and (max-width: 400px) {

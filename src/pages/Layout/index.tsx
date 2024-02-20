@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import LayoutSvg from "../../components/layouts/LayoutSvg";
+import LayoutSvg from "../../components/layouts/Leaf";
 import "./index.scss";
 
 const Layout = () => {
@@ -11,13 +11,13 @@ const Layout = () => {
         </div>
         <div className="right">
           <div className="form">
-          <svg viewBox="0 0 200 30">
-            <text x="0" y="75%">
-              {" "}
-              UNO{" "}
-            </text>
-          </svg>
-          <Outlet />
+            <svg viewBox="0 0 200 30">
+              <text x="0" y="75%">
+                {" "}
+                UNO{" "}
+              </text>
+            </svg>
+            <Outlet />
           </div>
         </div>
       </div>
